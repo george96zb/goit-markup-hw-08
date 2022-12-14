@@ -1,0 +1,43 @@
+/**
+  |============================
+  | Section about business priorities
+  |============================
+*/
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about__list {
+  display: flex;
+  gap: 30px;
+}
+
+.about__item {
+  width: 270px;
+}
+
+.about__icon-container {
+  display: flex;
+  background-color: var(--secondary-background-color);
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.about__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.about__subtitle {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--secondary-text-color);
+}

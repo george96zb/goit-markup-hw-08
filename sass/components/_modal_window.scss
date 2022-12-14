@@ -1,0 +1,210 @@
+/* Modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  z-index: 10;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  box-sizing: border-box;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+  transition-property: opacity, visibility;
+  background-color: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-text-color);
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+/* Register form */
+
+.register-form__title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  margin-bottom: 12px;
+}
+
+.register-form__group {
+  width: 448px;
+  height: 342px;
+  margin-bottom: 20px;
+}
+
+.register-form__field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register-form__label {
+  display: block;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+}
+
+.register-form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 2px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.register-form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  .register-form__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.register-form__message {
+  display: block;
+  resize: none;
+  outline: transparent;
+  width: 100%;
+  height: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 28px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.register-form__agreement {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.register-form__icon-checked {
+  opacity: 0;
+
+  .register-form__checkbox:checked + .register-form__icons & {
+    opacity: 1;
+  }
+}
+
+.register-form__icon-unchecked {
+  opacity: 1;
+
+  .register-form__checkbox:checked + .register-form__icons & {
+    opacity: 0;
+  }
+}
+
+.register-form__text {
+  user-select: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--secondary-text-color);
+}
+
+.register-form__link {
+  color: var(--accent-color);
+}
+
+.register-form__button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background: var(--accent-color);
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

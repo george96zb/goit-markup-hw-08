@@ -1,0 +1,42 @@
+/**
+  |============================
+  | Section about activities
+  |============================
+*/
+
+.activity {
+  padding-bottom: 94px;
+}
+
+.activity__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.activity__list {
+  display: flex;
+  gap: 30px;
+}
+
+.activity__wrapper {
+  position: relative;
+}
+
+.activity__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--white-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}

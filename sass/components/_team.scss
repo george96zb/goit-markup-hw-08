@@ -1,0 +1,83 @@
+/**
+  |============================
+  | Section about working staff and their roles
+  |============================
+*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+}
+
+.team__item {
+  background-color: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.team__wrapper {
+  padding: 30px;
+}
+
+.team__members {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.team__role {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Socials */
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: rgba(175, 177, 184, 1);
+  transition-timing-function: var(--timing-function);
+  transition-duration: 250ms;
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}

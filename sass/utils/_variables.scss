@@ -1,0 +1,26 @@
+:root {
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+
+  /* Background colors */
+  --main-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --additional-background-color: #f5f5f5;
+
+  /* Other colors */
+  --accent-color: #2196f3;
+  --active-btn-color: #188ce8;
+  --contact-links-color: rgba(255, 255, 255, 0.6);
+  --light-color1: #ececec;
+  --light-color2: #eeeeee;
+
+  /* Animation properties */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
