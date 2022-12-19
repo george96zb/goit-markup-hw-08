@@ -1,16 +1,19 @@
+// utils
 @import './utils/vars';
-@import './utils/visually-hedden';
+@import './utils/visually-hidden';
 
+// base
 @import './base/base';
 @import './base/reset';
 @import './base/container';
 
-@import './components/buttom';
+// components
+@import './components/button';
 @import './components/svg';
 @import './components/_mobile-menu';
-@import './components/text';
 @import './components/border';
 
+// layouts
 @import './layouts/footer';
 @import './layouts/header';
 @import './layouts/hero';

@@ -508,6 +508,11 @@ ul .clients-link:hover .clients-icon, ul .clients-link:focus .clients-icon {
   margin-left: 24px;
 }
 
+/**
+  |============================
+  | Project footer
+  |============================
+*/
 .footer {
   background-color: #2f303a;
   color: var(--background);
@@ -746,6 +751,11 @@ footer [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"] {
   }
 }
 
+/**
+  |============================
+  | Project header
+  |============================
+*/
 header {
   border-bottom: 2px solid #ececec;
   padding-top: 3px;
@@ -902,6 +912,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   position: relative;
 }
 
+/**
+  |============================
+  | Section hero
+  |============================
+*/
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
@@ -969,6 +984,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   }
 }
 
+/**
+  |============================
+  | Section about business priorities
+  |============================
+*/
 .skill {
   padding: 60px 0;
 }
@@ -1069,6 +1089,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   margin-bottom: 30px;
 }
 
+/**
+  |============================
+  | Section about activities
+  |============================
+*/
 .work {
   padding-top: 0;
   display: none;
@@ -1127,6 +1152,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   height: auto;
 }
 
+/**
+  |============================
+  | Section about working staff and their roles
+  |============================
+*/
 .team {
   background-color: #f5f4fa;
 }
@@ -1254,6 +1284,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   }
 }
 
+/**
+  |============================
+  | Section about regular clients
+  |============================
+*/
 .clients-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1332,6 +1367,11 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
   border-color: var(--color-but);
 }
 
+/**
+  |============================
+  | Portfolio section
+  |============================
+*/
 .products {
   padding-top: 0;
   display: -webkit-box;

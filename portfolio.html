@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <meta charset="UTF-8" />
+    <!-- IE10 and below only -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Portfolio</title>
+    <!-- Modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css " />
   </head>
   <body>
-    <!-- шапка-->
-    <header>
-      <div class="container header-container">
+    <!-- Portfolio header -->
+    <header class="header">
+      <div class="header-container container">
         <a class="link" href="/"><span>Web</span>Studio</a>
 
         <nav class="nav hidden-nav">
           <ul class="main-list">
             <li class="list-item">
-              <a class="header-nav-link" href="./index.html"
-                >Студія</a
-              >
+              <a class="header-nav-link" href="./index.html">Студія</a>
             </li>
             <li class="list-item">
-              <a
-                class="header-nav-link nav active"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="header-nav-link nav active" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="list-item">
-              <a class="header-nav-link" href=""
-                >Контакти</a
-              >
+              <a class="header-nav-link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="list-address hidden-nav">
           <li class="list-item">
-            <a
-              class="icon-contacts"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="icon-contacts" href="mailto:info@devstudio.com">
               <svg class="icon-tap" width="16" height="12">
-                <use
-                  href="./images/icons.svg#envelope"
-                ></use></svg
+                <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
           <li class="list-item">
-            <a
-              class="icon-contacts"
-              href="tel:+380961111111"
-            >
+            <a class="icon-contacts" href="tel:+380961111111">
               <svg class="icon-tap" width="10" height="16">
-                <use
-                  href="./images/icons.svg#smartphone"
-                ></use></svg
+                <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -80,15 +63,14 @@
             aria-controls="mobile-menu"
           >
             <svg width="40" height="40">
-              <use
-                href="./images/icons.svg#menu-open"
-              ></use>
+              <use href="./images/icons.svg#menu-open"></use>
             </svg>
           </button>
         </div>
       </div>
     </header>
-    <!-- кнопки buttoms-->
+
+    <!-- Buttons -->
     <section class="section section-products">
       <div class="container">
         <ul class="list-btn">
@@ -108,27 +90,21 @@
             <button type="button">Маркетинг</button>
           </li>
         </ul>
-        <!--приклади робіт products-->
-        <h1 hidden class="visually-hidden">
-          приклади робіт
-        </h1>
+
+        <!-- Gallery of works -->
+        <h1 hidden class="visually-hidden">приклади робіт</h1>
         <ul class="products">
           <li class="">
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x.webp 1x,
-                    ./images/work/img_sm-@2x.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x.webp 1x, ./images/work/img_sm-@2x.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -143,18 +119,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-1.webp 1x,
-                    ./images/work/img_sm-@2x-1.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-1.webp 1x, ./images/work/img_sm-@2x-1.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -169,18 +140,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-2.webp 1x,
-                    ./images/work/img_sm-@2x-2.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-2.webp 1x, ./images/work/img_sm-@2x-2.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -195,18 +161,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-3.webp 1x,
-                    ./images/work/img_sm-@2x-3.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-3.webp 1x, ./images/work/img_sm-@2x-3.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -221,18 +182,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-4.webp 1x,
-                    ./images/work/img_sm-@2x-4.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-4.webp 1x, ./images/work/img_sm-@2x-4.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -247,18 +203,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-5.webp 1x,
-                    ./images/work/img_sm-@2x-5.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-5.webp 1x, ./images/work/img_sm-@2x-5.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -273,18 +224,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-6.webp 1x,
-                    ./images/work/img_sm-@2x-6.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-6.webp 1x, ./images/work/img_sm-@2x-6.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -299,18 +245,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-7.webp 1x,
-                    ./images/work/img_sm-@2x-7.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-7.webp 1x, ./images/work/img_sm-@2x-7.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -325,18 +266,13 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  srcset="
-                    ./images/work/img_sm-@1x-8.webp 1x,
-                    ./images/work/img_sm-@2x-8.webp 2x
-                  "
+                  srcset="./images/work/img_sm-@1x-8.webp 1x, ./images/work/img_sm-@2x-8.webp 2x"
                   alt="зображення команди"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
-                    Ресурс пропонує комплексні пропозиції з
-                    різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
@@ -350,17 +286,16 @@
         </ul>
       </div>
     </section>
+
+    <!-- Portfolio footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <div>
-            <a href="./index.html"
-              ><span>Web</span>Studio</a
-            >
+            <a href="./index.html"><span>Web</span>Studio</a>
             <address class="link-address">
               <div class="socaial-footer">
                 <ul class="list-contacts">
-                  <!--webstudio-->
                   <li class="list-item">
                     <a
                       class="link"
@@ -372,18 +307,10 @@
                     </a>
                   </li>
                   <li class="list-item">
-                    <a
-                      class="link-address"
-                      href="mailto:info@devstudio.com"
-                      >info@devstudio.com</a
-                    >
+                    <a class="link-address" href="mailto:info@devstudio.com">info@devstudio.com</a>
                   </li>
                   <li class="list-item">
-                    <a
-                      class="link-address"
-                      href="tel:+380961111111"
-                      >+38 096 111 11 11</a
-                    >
+                    <a class="link-address" href="tel:+380961111111">+38 096 111 11 11</a>
                   </li>
                 </ul>
               </div>
@@ -401,14 +328,8 @@
                     rel="noopener noreferrer"
                     aria-label="instagram"
                   >
-                    <svg
-                      class="social-icon"
-                      width="20"
-                      height="20"
-                    >
-                      <use
-                        href="./images/icons.svg#instagram"
-                      ></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -420,14 +341,8 @@
                     rel="noopener noreferrer"
                     aria-label="twitter"
                   >
-                    <svg
-                      class="social-icon"
-                      width="20"
-                      height="20"
-                    >
-                      <use
-                        href="./images/icons.svg#twitter"
-                      ></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -439,14 +354,8 @@
                     rel="noopener noreferrer"
                     aria-label="facebook"
                   >
-                    <svg
-                      class="social-icon"
-                      width="20"
-                      height="20"
-                    >
-                      <use
-                        href="./images/icons.svg#facebook"
-                      ></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -458,14 +367,8 @@
                     rel="noopener noreferrer"
                     aria-label="linkedin"
                   >
-                    <svg
-                      class="social-icon"
-                      width="20"
-                      height="20"
-                    >
-                      <use
-                        href="./images/icons.svg#linkedin"
-                      ></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -474,10 +377,7 @@
           </div>
           <div>
             <form name="form" autocomplete="on">
-              <label
-                class="footer-email"
-                for="footer-email"
-              >
+              <label class="footer-email" for="footer-email">
                 <strong>Підпишіться на розсилку</strong>
               </label>
               <div class="add-email">
@@ -493,9 +393,7 @@
                   <button class="tg-btn" type="submit">
                     Підписатися
                     <svg class="" width="24" height="24">
-                      <use
-                        href="./images/icons.svg#icon-telegram"
-                      ></use>
+                      <use href="./images/icons.svg#icon-telegram"></use>
                     </svg>
                   </button>
                 </div>
@@ -505,11 +403,9 @@
         </div>
       </div>
     </footer>
+
     <!-- MOBILE MENU -->
-    <div
-      class="menu-container js-menu-container"
-      id="mobile-menu"
-    >
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu close-menu">
         <svg class="close-menu__btn" width="40" height="40">
           <use href="./images/icons.svg#menu-close"></use>
@@ -521,9 +417,7 @@
           <a href="./index.html" class="">Студія</a>
         </li>
         <li>
-          <a href="./portfolio.html" class="nav active"
-            >Портфоліо</a
-          >
+          <a href="./portfolio.html" class="nav active">Портфоліо</a>
         </li>
         <li>
           <a href="" class="">Контакти</a>
@@ -531,16 +425,10 @@
       </ul>
       <ul class="mobile-menu-con">
         <li>
-          <a href="tel:+380961111111" class="menu__tel"
-            >+38 096 111 11 11</a
-          >
+          <a href="tel:+380961111111" class="menu__tel">+38 096 111 11 11</a>
         </li>
         <li>
-          <a
-            href="mailto:info@devstudio.com"
-            class="menu__email"
-            >info@devstudio.com</a
-          >
+          <a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a>
         </li>
       </ul>
       <ul class="mobile-menu-soc">
