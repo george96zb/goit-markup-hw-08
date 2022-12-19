@@ -1,0 +1,87 @@
+.icon {
+  &-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: var(--color-p);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+
+  &-contacts:hover &-tap,
+  &-contacts:focus &-tap {
+    fill: var(--color-but);
+  }
+
+  &-tap {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+
+  &-tap:hover,
+  &-tap:focus {
+    fill: var(--color-but);
+  }
+
+  &-unchecked {
+    opacity: 1;
+  }
+
+  &-unchecked:focus,
+  &-checked:focus {
+    fill: var(--color-but);
+  }
+
+  &-checked {
+    opacity: 0;
+    transition: opacity 250ms var(--timing-function);
+    fill: var(--color-but);
+  }
+
+  .aggre-licence:checked + &-licence &-checked {
+    background-color: var(--active-but);
+    opacity: 1;
+  }
+
+  .aggre-licence:checked + &-licence &-unchecked {
+    fill: var(--active-but);
+  }
+
+  &-licence:checked &-unchecked {
+    background-color: var(--active-but);
+  }
+
+  &-licence:focus {
+    fill: var(--active-but);
+  }
+}
+
+.clients-icon {
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  ul .clients-link:hover &,
+  ul .clients-link:focus & {
+    fill: var(--color-but);
+  }
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 14px;
+  transition: fill 250ms var(--timing-function);
+
+  &:focus,
+  &:hover {
+    border-color: var(--input-border);
+  }
+
+  .input:focus + & {
+    fill: var(--color-but);
+  }
+}

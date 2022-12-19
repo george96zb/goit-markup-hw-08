@@ -1,0 +1,79 @@
+.hero {
+  background-color: #2f303a;
+  padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/hero/img_sm-@1x.webp);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      )
+      url(../images/hero/img_sm-@2x.webp);
+  }
+
+  @media screen and(min-width:481px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/hero/img_md-@1x.webp);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(../images/hero/img_md-@2x.webp);
+    }
+  }
+
+  @media screen and(min-width:769px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/hero/img_lg-@1x.webp);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(../images/hero/img_lg-@2x.webp);
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  &-cap {
+    color: var(--background);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and(min-width: 480px) {
+      width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      width: 696px;
+    }
+  }
+}

@@ -1,16 +1,6 @@
-/* Reset */
-
-.html {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
 }
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-/* Margin reset*/
 h1,
 h2,
 h3,
@@ -21,13 +11,13 @@ p {
   margin: 0;
 }
 
-/* Decoration reset */
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  height: auto;
+  width: 100%;
 }

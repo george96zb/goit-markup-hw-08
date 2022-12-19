@@ -1,17 +1,26 @@
 body {
-  font-family: var(--main-font);
-  color: var(--main-text-color);
+  color: var(--text);
+  background-color: var(--background);
+  font-family: 'roboto';
   letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-/* Styles for images */
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+p {
+  color: var(--color-p);
 }
-
+span {
+  color: var(--color-but);
+}
 .hidden-nav {
   opacity: 0;
   display: none;

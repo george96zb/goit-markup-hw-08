@@ -1,0 +1,104 @@
+.products {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @media screen and(min-width:768px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  & h2 {
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 0px 4px 24px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+  }
+
+  & .list-products:hover,
+  & .list-products:focus {
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+  }
+
+  & li {
+    letter-spacing: 0.06em;
+  }
+}
+
+.list-products {
+  display: inline-block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  width: 100%;
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    width: 370px;
+  }
+
+  .section &:hover {
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+  }
+}
+
+.overlay {
+  transform: translateY(101%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color-90);
+  width: 100%;
+  height: 100%;
+  padding: 77px 24px;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  &__desc {
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    color: var(--background);
+    line-height: calc(28 / 18);
+  }
+
+  li:hover & {
+    transform: translateY(0);
+  }
+}
+
+.team-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.border p {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: left;
+  margin-left: 24px;
+}

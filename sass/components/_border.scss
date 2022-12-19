@@ -1,0 +1,20 @@
+.border {
+  border-right-color: rgb(238, 238, 238);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: rgb(238, 238, 238);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(238, 238, 238);
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  & p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+    margin-left: 24px;
+  }
+}

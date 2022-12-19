@@ -1,18 +1,22 @@
-// base styles and utils
-@import './utils/variables';
+@import './utils/vars';
+@import './utils/visually-hedden';
+
 @import './base/base';
 @import './base/reset';
 @import './base/container';
-@import './utils/visually-hidden';
 
-// components
-@import './components/header';
-@import './components/mobile-menu';
-@import './components/hero';
-@import './components/modal_window';
-@import './components/about';
-@import './components/activity';
-@import './components/team';
-@import './components/clients';
-@import './components/portfolio_section';
-@import './components/footer';
+@import './components/buttom';
+@import './components/svg';
+@import './components/_mobile-menu';
+@import './components/text';
+@import './components/border';
+
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/skill';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/products';
+@import './layouts/modal_window';
